@@ -5,12 +5,13 @@ import {
   IconButton,
   Typography,
   Button,
+  
 } from "@material-ui/core";
-import MenuIcon from "@material-ui/icons/Menu";
+
 import { Link } from "react-router-dom";
 import cookie from "cookie";
 
-const Navigation = () => {
+
 const Navigation = (props) => {
   const cookies = cookie.parse(document.cookie);
   return (
@@ -18,7 +19,6 @@ const Navigation = (props) => {
       <AppBar position="relative">
         <Toolbar>
           <IconButton color="secondary">
-            <MenuIcon />
           </IconButton>
           <Typography variant="h6" style={{ flexGrow: "1" }}>
             Coffee Buzz
@@ -67,5 +67,5 @@ const Navigation = (props) => {
       </div>
     );
   };
-}
+
 export default Navigation;
